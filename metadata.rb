@@ -1,0 +1,7 @@
+name             'jobs'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures jobs'
+long_description 'Installs/Configures jobs'
+version          '0.1.0'
