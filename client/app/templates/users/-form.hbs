@@ -1,0 +1,14 @@
+<div>
+  {{#if errorMessage}}
+    <div>
+      {{errorMessage}}
+    </div>
+  {{/if}}
+  {{input value=model.username placeholder="Username"}}
+  <br/>
+  {{input value=model.email placeholder="Email"}}
+  <br />
+  {{input type="password" value=model.password placeholder="Password"}}
+  <br />
+  <button {{action "saveUser" model}}>Save</button>
+</div>

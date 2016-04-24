@@ -2,6 +2,7 @@ defmodule Jobs.SessionController do
   use Jobs.Web, :controller
 
   alias Jobs.User
+
   def create(conn, %{"username" => username, "password" => password}) do
     case Repo.get_by(User, %{username: username}) do
       nil ->
@@ -16,6 +17,7 @@ defmodule Jobs.SessionController do
         end
     end
   end
+
   defp login_failed(conn) do
     conn
     |> render("login_failed.json", %{})

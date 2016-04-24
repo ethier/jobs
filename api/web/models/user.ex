@@ -10,8 +10,8 @@ defmodule Jobs.User do
     timestamps
   end
 
-  @required_fields ~w(username email)
-  @optional_fields ~w(password encrypted_password)
+  @required_fields ~w(username email password)
+  @optional_fields ~w()
 
   @doc """
   Creates a changeset based on the `model` and `params`.
