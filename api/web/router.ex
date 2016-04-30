@@ -26,7 +26,10 @@ defmodule Jobs.Router do
   scope "/api", Jobs do
     pipe_through :api
 
-    resources "/users", UserController, except: [:new, :edit]
     post "/login", SessionController, :create, as: :login
+
+    resources "/users", UserController, except: [:new, :edit]
+    resources "/organizations", OrganizationController, except: [:new, :edit]
+    resources "/jobs", JobController, except: [:new, :edit]
   end
 end

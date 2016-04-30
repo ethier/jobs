@@ -15,6 +15,7 @@ defmodule Jobs.Web do
   Do NOT define functions inside the quoted expressions
   below.
   """
+  import Canary.Plugs
 
   def model do
     quote do

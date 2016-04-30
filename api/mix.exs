@@ -41,7 +41,8 @@ defmodule Jobs.Mixfile do
      {:guardian, "~> 0.10"},
      {:corsica, "~> 0.4"},
      {:ja_serializer, "~> 0.8.1"},
-     {:ex_machina, "~> 0.6.1"}]
+     {:ex_machina, "~> 0.6.1"},
+     {:canary, "~> 0.14.1"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
